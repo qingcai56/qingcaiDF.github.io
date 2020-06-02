@@ -1,0 +1,127 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>计算机运算方法 | qingcai</title><meta name="description" content="计算机运算方法"><meta name="author" content="qingcai56"><meta name="copyright" content="qingcai56"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/luobo1.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="计算机运算方法"><meta name="twitter:description" content="计算机运算方法"><meta name="twitter:image" content="http://yoursite.com/img/post.jpg"><meta property="og:type" content="article"><meta property="og:title" content="计算机运算方法"><meta property="og:url" content="http://yoursite.com/2020/05/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%90%E7%AE%97%E6%96%B9%E6%B3%95/"><meta property="og:site_name" content="qingcai"><meta property="og:description" content="计算机运算方法"><meta property="og:image" content="http://yoursite.com/img/post.jpg"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>var autoChangeMode = '2'
+var t = Cookies.get("theme")
+if (autoChangeMode == '1'){
+  var isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+  var isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+  var isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined){
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport){
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour < 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+  }
+  } else if (t == 'light') activateLightMode()
+  else activateDarkMode()
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yoursite.com/2020/05/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%90%E7%AE%97%E6%96%B9%E6%B3%95/"><link rel="prev" title="Numpy &amp; Pandas" href="http://yoursite.com/2020/05/30/Numpy-Pandas/"><link rel="next" title="tkinter+pymsql实现的学生选课和教师成绩管理系统 " href="http://yoursite.com/2020/05/26/tkinter-pymsql%E5%AE%9E%E7%8E%B0%E7%9A%84s%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https:qingcai.github.io","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  bookmark: {
+    message_prev: 'Press',
+    message_next: 'to bookmark this page'
+  },
+  runtime_unit: 'days',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: false,
+  isPhotoFigcaption: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isSidebar: true  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.0"></head><body><canvas class="fireworks"></canvas><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/touxiang.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">Articles</div><div class="length_num">10</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">Tags</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#计算机运算方法"><span class="toc-number">1.</span> <span class="toc-text">计算机运算方法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、数制与编码"><span class="toc-number">1.1.</span> <span class="toc-text">1、数制与编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-进制转换"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1 进制转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-BCD码"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2 BCD码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-校验码"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.3 校验码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-1-奇偶校验码"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">1.3.1 奇偶校验码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-2-海明校验码"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">1.3.2 海明校验码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-3循环冗余码"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">1.3.3循环冗余码</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-7-字符串及字符表示法"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.7 字符串及字符表示法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、数的定点表示和浮点表示"><span class="toc-number">1.2.</span> <span class="toc-text">2、数的定点表示和浮点表示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-原码"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1 原码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-补码"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2 补码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-反码"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3 反码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-移码"><span class="toc-number">1.2.4.</span> <span class="toc-text">2.4 移码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5浮点数"><span class="toc-number">1.2.5.</span> <span class="toc-text">2.5浮点数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、定点运算"><span class="toc-number">1.3.</span> <span class="toc-text">3、定点运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、浮点数运算"><span class="toc-number">1.4.</span> <span class="toc-text">4、浮点数运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、算数逻辑单元（了解）"><span class="toc-number">1.5.</span> <span class="toc-text">5、算数逻辑单元（了解）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#"><span class="toc-number">1.5.1.</span> <span class="toc-text"></span></a></li></ol></li></ol></li></ol></div></div></div><div id="body-wrap"><div class="post-bg" id="nav" style="background-image: url(/img/post.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">qingcai</a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> About</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> List</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> Movie</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">计算机运算方法</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="Created 2020-05-27 19:26:09"><i class="fa fa-calendar" aria-hidden="true"></i> Created 2020-05-27</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="Updated 2020-05-27 19:26:09"><i class="fa fa-history" aria-hidden="true"></i> Updated 2020-05-27</span></time></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><h1 id="计算机运算方法"><a href="#计算机运算方法" class="headerlink" title="计算机运算方法"></a>计算机运算方法</h1><h2 id="1、数制与编码"><a href="#1、数制与编码" class="headerlink" title="1、数制与编码"></a>1、数制与编码</h2><h3 id="1-1-进制转换"><a href="#1-1-进制转换" class="headerlink" title="1.1 进制转换"></a>1.1 进制转换</h3><p>​        （1）R进制转化为十进制（简）</p>
+<p>​        （2）十进制转化为R进制</p>
+<p>​                    整数部分：除二取余法（减权定位法）</p>
+<p>​                    小数部分：乘二取整法</p>
+<p>​        （3）进制数之间的相互转换</p>
+<p>​                    八进制数就三个二进制一组</p>
+<h3 id="1-2-BCD码"><a href="#1-2-BCD码" class="headerlink" title="1.2 BCD码"></a>1.2 BCD码</h3><p>​        8421码，2421码，余3码=8421码+3</p>
+<p>​        如果两个8421码之和大于9，则需再结果后加6（0110）进行修正</p>
+<h3 id="1-3-校验码"><a href="#1-3-校验码" class="headerlink" title="1.3 校验码"></a>1.3 校验码</h3><p>​        带有发现某些错误或自动改错能力的编码方法，冗余码进行纠错。</p>
+<p>​        <strong>码距：</strong>两个合法码字之间 *最少 *变化的二进制位数。码距越大纠错能力越强，效率越低</p>
+<p>​                    <u>格雷码，码距为1</u>                             <u>纠错的基本，异或</u></p>
+<h4 id="1-3-1-奇偶校验码"><a href="#1-3-1-奇偶校验码" class="headerlink" title="1.3.1 奇偶校验码"></a>1.3.1 奇偶校验码</h4><p>​        在院编码上加上一个校验位，码距等于2，可以检测出一位错误，但不能确定出错位置，偶数位错误也不能检测出来。</p>
+<table>
+<thead>
+<tr>
+<th align="left">校验位</th>
+<th>有效信息位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1（奇）</td>
+<td>1100</td>
+</tr>
+<tr>
+<td align="left">0（偶）</td>
+<td>1100</td>
+</tr>
+</tbody></table>
+<h4 id="1-3-2-海明校验码"><a href="#1-3-2-海明校验码" class="headerlink" title="1.3.2 海明校验码"></a>1.3.2 海明校验码</h4><p>​        海明码的构成方法是在数据位之间的确定位置插入k个校验位，通过扩大码距来实现检错和纠错。对于数据位m的数据，加入k位的校验码,它应满足：<strong>m+k+1&lt;2^k</strong>。任何一位有效数据位至少被两位所校验位校验，指错字为0不一定没有错误</p>
+<p>​        如果能自动校验一位错误，并且同时发现两位错误满足  <strong>2^r-1 &gt;= k+r</strong></p>
+<p>​        <a href="https://www.icourse163.org/learn/HUST-1003159001?tid=1450203445#/learn/content?type=detail&id=1214319387" target="_blank" rel="noopener">华科计算机海明码</a>   这节课讲的还是可以的</p>
+<h4 id="1-3-3循环冗余码"><a href="#1-3-3循环冗余码" class="headerlink" title="1.3.3循环冗余码"></a>1.3.3循环冗余码</h4><p>​        CRC码可以发现并纠正信息串行读写，存储或传送过程中出现的一位、多位错误，在磁介质存储器读写和计算机之间得到广泛运用</p>
+<p>​        <a href="https://www.icourse163.org/learn/HUST-1003159001?tid=1450203445#/learn/content?type=detail&id=1214319386&cid=1217937707" target="_blank" rel="noopener">华科计算机crc码</a>  </p>
+<p>​        </p>
+<h3 id="1-7-字符串及字符表示法"><a href="#1-7-字符串及字符表示法" class="headerlink" title="1.7 字符串及字符表示法"></a>1.7 字符串及字符表示法</h3><p>​        字符：ASCII码：7位+1个校验位，共128个数    A:65    a:97    0:48</p>
+<p>​        字符串： 字符串占用内存中连续的多个字节，每一个字节存储一个字符</p>
+<p>​        汉字编码：GB18030编码</p>
+<h2 id="2、数的定点表示和浮点表示"><a href="#2、数的定点表示和浮点表示" class="headerlink" title="2、数的定点表示和浮点表示"></a>2、数的定点表示和浮点表示</h2><p>​        计算机中的数存放在cpu寄存器中，寄存器位数就是机器字长</p>
+<h3 id="2-1-原码"><a href="#2-1-原码" class="headerlink" title="2.1 原码"></a>2.1 原码</h3><h3 id="2-2-补码"><a href="#2-2-补码" class="headerlink" title="2.2 补码"></a>2.2 补码</h3><h3 id="2-3-反码"><a href="#2-3-反码" class="headerlink" title="2.3 反码"></a>2.3 反码</h3><p>​        上面三个一起理解</p>
+<h3 id="2-4-移码"><a href="#2-4-移码" class="headerlink" title="2.4 移码"></a>2.4 移码</h3><h3 id="2-5浮点数"><a href="#2-5浮点数" class="headerlink" title="2.5浮点数"></a>2.5浮点数</h3><p>​    IEEE754规格</p>
+<h2 id="3、定点运算"><a href="#3、定点运算" class="headerlink" title="3、定点运算"></a>3、定点运算</h2><p>原码补码加减乘除</p>
+<h2 id="4、浮点数运算"><a href="#4、浮点数运算" class="headerlink" title="4、浮点数运算"></a>4、浮点数运算</h2><p>浮点的加减法</p>
+<p>浮点与IEEE754结合（难点）</p>
+<h2 id="5、算数逻辑单元（了解）"><a href="#5、算数逻辑单元（了解）" class="headerlink" title="5、算数逻辑单元（了解）"></a>5、算数逻辑单元（了解）</h2><h3 id><a href="#" class="headerlink" title></a></h3></div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">qingcai56</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://yoursite.com/2020/05/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%90%E7%AE%97%E6%96%B9%E6%B3%95/">http://yoursite.com/2020/05/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%90%E7%AE%97%E6%96%B9%E6%B3%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/img/post.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> Donate<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg" alt="微信"/><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg" alt="支付寶"/><div class="post-qr-code__desc">支付寶</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/05/30/Numpy-Pandas/"><img class="prev_cover lazyload" data-src="/img/post.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Numpy &amp; Pandas</div></div></a></div><div class="next-post pull_right"><a href="/2020/05/26/tkinter-pymsql%E5%AE%9E%E7%8E%B0%E7%9A%84s%E9%80%89%E8%AF%BE%E7%B3%BB%E7%BB%9F/"><img class="next_cover lazyload" data-src="/img/post.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">tkinter+pymsql实现的学生选课和教师成绩管理系统 </div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By qingcai56</div><div class="framework-info"><span>Driven </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="Read Mode"></i><i class="fa fa-plus" id="font_plus" title="Increase font size"></i><i class="fa fa-minus" id="font_minus" title="Decrease font size"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="Traditional Chinese and Simplified Chinese Conversion" target="_self">繁</a><i class="darkmode fa fa-moon-o" id="darkmode" title="Dark Mode"></i></div><div id="rightside-config-show"><div id="rightside_config" title="Setting"><i class="fa fa-cog" aria-hidden="true"></i></div><i class="fa fa-list-ul close" id="mobile-toc-button" title="Table of Contents" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="Back to top" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/js/third-party/fireworks.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script></body></html>
